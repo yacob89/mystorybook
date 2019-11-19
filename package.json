@@ -1,20 +1,31 @@
 {
   "name": "mystory",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@mapbox/geojsonhint": "^3.0.0",
+    "@turf/rewind": "^5.1.5",
+    "@turf/turf": "^5.1.6",
+    "@webpack-cli/init": "^0.2.2",
+    "axios": "^0.19.0",
+    "formik": "^2.0.4",
+    "fs": "^0.0.1-security",
+    "fuse.js": "^3.4.5",
+    "geojson-rewind": "^0.3.1",
+    "mapbox-gl": "^1.5.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-dropzone": "^10.1.10",
     "react-scripts": "3.2.0",
+    "react-use-flexsearch": "^0.1.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.1",
     "shapefile": "^0.6.6",
     "shpjs": "^3.4.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack-dev-server",
+    "build": "webpack",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
@@ -36,11 +47,18 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
     "@storybook/addon-actions": "^5.2.5",
     "@storybook/addon-links": "^5.2.5",
     "@storybook/addons": "^5.2.5",
     "@storybook/react": "^5.2.5",
-    "babel-loader": "^8.0.6"
-  }
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "description": "My webpack project"
 }
