@@ -7,7 +7,7 @@
     "@turf/rewind": "^5.1.5",
     "@turf/turf": "^5.1.6",
     "@webpack-cli/init": "^0.2.2",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "formik": "^2.0.4",
     "fs": "^0.0.1-security",
     "fuse.js": "^3.4.5",
